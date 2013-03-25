@@ -15,7 +15,40 @@
   " original repos on github
   Bundle 'scrooloose/nerdtree'
   Bundle 'flazz/vim-colorschemes'
+  " Lots of nice default vim settings
   Bundle 'tpope/vim-sensible'
+  " Adds a nice info bar to vim
+  Bundle 'Lokaltog/vim-powerline'
+  " Syntax Validation
+  Bundle 'scrooloose/syntastic'
+  " Fuzzy file searching
+  Bundle 'kien/ctrlp.vim'
+  " Comment out lines/blocks of text
+  Bundle 'tomtom/tcomment_vim'
+  " Auto close quotes etc..
+  Bundle 'jiangmiao/auto-pairs'
+  " Run ruby commands from vim
+  Bundle 'skwp/vim-ruby-conque'
+  " Run terminal commands from vim
+  Bundle 'rson/vim-conque'
+  " Auto align things
+  Bundle 'godlygeek/tabular'
+  " Get ruby doc info on variables
+  Bundle 'danchoi/ri.vim'
+  " Fuzzy search methods
+  Bundle 'danchoi/rb_nav'
+  " Autocomplete
+  Bundle 'Shougo/neocomplcache'
+  " A Vim plugin which shows a git diff in the 'gutter' (sign column).
+  Bundle 'airblade/vim-gitgutter'
+  " Git commands
+  Bundle 'tpope/vim-fugitive'
+  " Search all files in current git repo
+  Bundle 'aghareza/vim-gitgrep'
+  " Search and replace across all files
+  Bundle 'skwp/greplace.vim'
+  " Git history
+  Bundle 'gregsexton/gitv'
 
   " vim-scripts
   Bundle 'lastpos.vim'
@@ -56,3 +89,12 @@ set wildignore+=*.gem
 set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
+
+" === Plugin settings that need to be in vimrc =======
+" Need to figure out why they need to be here
+
+" Syntastic
+let g:syntastic_error_symbol = '✗✗'
+let g:syntastic_style_error_symbol = '✠✠'
+let g:syntastic_warning_symbol = '∆∆'
+let g:syntastic_style_warning_symbol = '≈≈'
