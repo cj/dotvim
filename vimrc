@@ -49,6 +49,24 @@
   Bundle 'skwp/greplace.vim'
   " Git history
   Bundle 'gregsexton/gitv'
+  " Lots of nice default ruby settings
+  Bundle 'vim-ruby/vim-ruby'
+  " Highlight ruby blocks
+  " required
+  Bundle 'kana/vim-textobj-user'
+  Bundle 'matchit.zip'
+  "
+  Bundle 'nelstrom/vim-textobj-rubyblock'
+  " Adds the end to things like def in ruby
+  Bundle 'tpope/vim-endwise'
+  " Used to take notes inside vim
+  Bundle 'mrtazz/simplenote.vim'
+  " Calendar
+  Bundle 'mattn/calendar-vim'
+
+  " ================= Syntax's =======================
+  Bundle 'groenewege/vim-less'
+  Bundle 'kchmck/vim-coffee-script'
 
   " vim-scripts
   Bundle 'lastpos.vim'
