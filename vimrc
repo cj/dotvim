@@ -65,6 +65,8 @@
   Bundle 'mattn/calendar-vim'
   " Visualize VIM undo
   Bundle 'sjl/gundo.vim'
+  " Save your vim session (open windows etc..)
+  Bundle 'xolox/vim-session'
 
   " ================= Syntax's =======================
   Bundle 'groenewege/vim-less'
