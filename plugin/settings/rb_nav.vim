@@ -147,13 +147,14 @@ func! s:jump_to_method()
   if len(split(selection, '\s\+')) == 1
     " user pressed return without autocompleting, so find the first match
     for x in s:selection_list
-      if get(split(x, '\s\+'), 0) == selection
+      if tolower(get(split(x, '\s\+'), 0)) =~ '^'.tolower(selection)
         let selection = x
       endif
     endfor
   endif
   let line = get(split(selection, '\s\+'), -1)
-  exec 'normal '.line.'G'
+  echo line
+  exec "normal ".line."G"
   call feedkeys("z\<cr>", "t")
 endfunc
 
