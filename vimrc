@@ -63,6 +63,8 @@
   Bundle 'mrtazz/simplenote.vim'
   " Calendar
   Bundle 'mattn/calendar-vim'
+  " Visualize VIM undo
+  Bundle 'sjl/gundo.vim'
 
   " ================= Syntax's =======================
   Bundle 'groenewege/vim-less'

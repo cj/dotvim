@@ -158,5 +158,5 @@ func! s:jump_to_method()
 endfunc
 
 
-nnoremap ,c :call <SID>autocomplete_classes()<cr>
-nnoremap ,m :call <SID>autocomplete_methods()<cr>
+nnoremap <C-c> :call <SID>autocomplete_classes()<cr>
+nnoremap <C-m> :call <SID>autocomplete_methods()<cr>
