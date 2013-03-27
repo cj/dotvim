@@ -66,7 +66,11 @@
   " Visualize VIM undo
   Bundle 'sjl/gundo.vim'
   " Save your vim session (open windows etc..)
-  Bundle 'xolox/vim-session'
+  " Bundle 'xolox/vim-session'
+  " Run bundler commands from vim
+  Bundle 'tpope/vim-bundler'
+  Bundle 'tpope/vim-rails'
+  Bundle 'majutsushi/tagbar'
 
   " ================= Syntax's =======================
   Bundle 'groenewege/vim-less'
@@ -116,7 +120,9 @@ set wildignore+=*.png,*.jpg,*.gif
 " Need to figure out why they need to be here
 
 " Syntastic
-let g:syntastic_error_symbol = '✗✗'
-let g:syntastic_style_error_symbol = '✠✠'
-let g:syntastic_warning_symbol = '∆∆'
-let g:syntastic_style_warning_symbol = '≈≈'
+let g:syntastic_error_symbol = '∆>'
+let g:syntastic_style_error_symbol = '∆>'
+" let g:syntastic_style_error_symbol = '✠>'
+let g:syntastic_warning_symbol = '∆>'
+let g:syntastic_style_warning_symbol = '∆>'
+" let g:syntastic_style_warning_symbol = '≈>'

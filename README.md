@@ -14,3 +14,7 @@ Switch to the `~/.vim` directory, and fetch submodules:
     git submodule update
     sudo rm -r `gem env gemdir`/doc
     rvm docs generate-ri
+
+# Install HomeBrew
+brew install npm
+npm install -g coffeelint

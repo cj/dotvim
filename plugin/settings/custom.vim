@@ -26,8 +26,14 @@ nmap ,v :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
 " The normal use of S is covered by cc, so don't worry about shadowing it.
 nnoremap S i<cr><esc><right>mwgk:silent! s/\v +$//<cr>:noh<cr>`w
 
+" Save when losing focus
+au FocusLost * :silent! wall
+
 " Resize splits when the window is resized
 au VimResized * :wincmd =
+
+" Kill vim window if only NERDTree left
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " Allow you to move up and down on wrapped lines
 noremap j gj
@@ -84,7 +90,7 @@ vmap <tab> >gv
 vmap <s-tab> <gv
 
 " New tab
-map <silent> ,n :tabnew .<cr>
+map <silent> ,n :tabnew<cr>
 
 " Zoom in and out of current window with ,gz
 map <silent> ,gz <C-w>o
