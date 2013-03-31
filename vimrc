@@ -7,6 +7,9 @@
   set rtp+=~/.vim/bundle/vundle/
   call vundle#rc()
 
+  " MOVE THIS TO A vimrc.before file!
+  let g:yankring_replace_n_pkey = "'"
+
   " let Vundle manage Vundle
   " required!
   Bundle 'gmarik/vundle'
@@ -78,6 +81,7 @@
 
   " vim-scripts
   Bundle 'lastpos.vim'
+  Bundle 'YankRing.vim'
 
 " ================ General Config ====================
 set number                      "Line numbers are good

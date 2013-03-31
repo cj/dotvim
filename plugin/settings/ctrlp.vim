@@ -8,7 +8,8 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-
 " We don't want to use Ctrl-p as the mapping because
 " it interferes with YankRing (paste, then hit ctrl-p)
 let g:ctrlp_map = '<C-t>'
-nnoremap <silent> <C-t> :CtrlPMixed<CR>
+" nnoremap <silent> <C-t> :CtrlPMixed<CR>
+nnoremap <silent> <C-t> :CtrlP<CR>
 nnoremap <C-b> :CloseSingleConque<CR>:CtrlPBuffer<cr>
 nnoremap <C-r> :CtrlPMRU<cr>
 
@@ -17,7 +18,7 @@ nnoremap <C-r> :CtrlPMRU<cr>
 " nnoremap <silent> <C-b> :CloseSingleConque<CR>:CtrlPBuffer<cr>
 
 " Cmd-Shift-P to clear the cache
-nnoremap <silent> <C-P> :ClearCtrlPCache<cr>
+nnoremap <silent> <C-p> :ClearCtrlPCache<cr>
 
 " Idea from : http://www.charlietanksley.net/blog/blog/2011/10/18/vim-navigation-with-lustyexplorer-and-lustyjuggler/
 " Open CtrlP starting from a particular path, making it much

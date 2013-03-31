@@ -27,7 +27,7 @@ nmap ,v :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
 nnoremap S i<cr><esc><right>mwgk:silent! s/\v +$//<cr>:noh<cr>`w
 
 " Save when losing focus
-au FocusLost * :silent! wall
+" au FocusLost * :silent! wall
 
 " Resize splits when the window is resized
 au VimResized * :wincmd =
@@ -46,6 +46,10 @@ set splitbelow splitright
 
 " Strips white space on save
 au BufWritePre * :StripTrailingWhitespaces
+
+" Save when losing focus
+au FocusLost * :silent! wall
+
 
 " Always retab and make sure we're using spaces and not tabs
 function! DoReTab()

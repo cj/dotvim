@@ -7,4 +7,6 @@ let g:syntastic_auto_loc_list=1
 "don't care about warnings
 let g:syntastic_quiet_warnings=0
 
-let g:syntastic_coffee_coffeelint_args = '--csv -f ~/.vim/configs/coffeelint.json'
+" let coffee_lint_options = '--csv -f  ~/.vim/configs/coffeelint.json'
+" let g:syntastic_coffee_coffeelint_args = '--csv -f ~/.vim/configs/coffeelint.json'
+let g:syntastic_coffee_checkers=['coffee']
