@@ -7,8 +7,13 @@
   set rtp+=~/.vim/bundle/vundle/
   call vundle#rc()
 
+  " Ignore swp already exists message
+  set shortmess+=A
+
   " MOVE THIS TO A vimrc.before file!
   let g:yankring_replace_n_pkey = "'"
+  let g:localvimrc_ask=0
+  let g:localvimrc_sandbox=0
 
   " let Vundle manage Vundle
   " required!
@@ -21,7 +26,8 @@
   " Lots of nice default vim settings
   Bundle 'tpope/vim-sensible'
   " Adds a nice info bar to vim
-  Bundle 'Lokaltog/vim-powerline'
+  Bundle 'Lokaltog/powerline'
+  set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
   " Syntax Validation
   Bundle 'scrooloose/syntastic'
   " Fuzzy file searching
@@ -74,6 +80,9 @@
   Bundle 'tpope/vim-bundler'
   Bundle 'tpope/vim-rails'
   Bundle 'majutsushi/tagbar'
+  " project specific configs, looks for .lvimrc in your root dir
+  Bundle 'embear/vim-localvimrc'
+  Bundle 'rygwdn/vim-async'
 
   " ================= Syntax's =======================
   Bundle 'groenewege/vim-less'
