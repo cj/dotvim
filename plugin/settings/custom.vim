@@ -33,7 +33,8 @@ nnoremap S i<cr><esc><right>mwgk:silent! s/\v +$//<cr>:noh<cr>`w
 au VimResized * :wincmd =
 
 " Kill vim window if only NERDTree left
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+" THIS IS MAKING VIM FREEZ ON QUIT FOR SOME RANDOM REASON!!!!!!
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " Allow you to move up and down on wrapped lines
 noremap j gj
