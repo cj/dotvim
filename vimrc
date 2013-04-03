@@ -84,6 +84,9 @@
   Bundle 'embear/vim-localvimrc'
   Bundle 'rygwdn/vim-async'
 
+  " http://velvetpulse.com/2012/11/19/improve-your-ruby-workflow-by-integrating-vim-tmux-pry/
+  Bundle 'ervandew/screen'
+
   " ================= Syntax's =======================
   Bundle 'groenewege/vim-less'
   Bundle 'kchmck/vim-coffee-script'
@@ -139,3 +142,20 @@ let g:syntastic_style_error_symbol = '∆>'
 let g:syntastic_warning_symbol = '∆>'
 let g:syntastic_style_warning_symbol = '∆>'
 " let g:syntastic_style_warning_symbol = '≈>'
+
+" Screen settings
+let g:ScreenImpl = 'Tmux'
+let g:ScreenShellTmuxInitArgs = '-2'
+let g:ScreenShellInitialFocus = 'shell'
+let g:ScreenShellQuitOnVimExit = 0
+map <F5> :ScreenShellVertical<CR>
+command -nargs=? -complete=shellcmd W  :w | :call ScreenShellSend("load '".@%."';")
+map <Leader>r :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
+map <Leader>e :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
+map <Leader>b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
+
+" Fix insert
+autocmd InsertEnter,InsertLeave * set cul!
+
+" Make sure we use the candyman theme!
+colorscheme candyman

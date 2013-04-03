@@ -18,3 +18,11 @@ Switch to the `~/.vim` directory, and fetch submodules:
 # Install HomeBrew
 brew install npm
 npm install -g coffeelint
+
+http://blog.remibergsma.com/2012/01/30/alt-key-aan-de-praat-in-osx-terminal/
+
+# Add this to your .zshrc file
+stty ixany
+stty ixoff -ixon
+stty stop undef
+stty start undef
