@@ -150,9 +150,9 @@ let g:ScreenShellInitialFocus = 'shell'
 let g:ScreenShellQuitOnVimExit = 0
 map <F5> :ScreenShellVertical<CR>
 command -nargs=? -complete=shellcmd W  :w | :call ScreenShellSend("load '".@%."';")
-map <Leader>r :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
-map <Leader>e :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
-map <Leader>b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
+map ,r :w<CR> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<CR>
+map ,e :w<CR> :call ScreenShellSend("cucumber --format=pretty ".@% . ':' . line('.'))<CR>
+map ,b :w<CR> :call ScreenShellSend("break ".@% . ':' . line('.'))<CR>
 
 " Fix insert
 autocmd InsertEnter,InsertLeave * set cul!

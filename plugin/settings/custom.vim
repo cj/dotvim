@@ -8,6 +8,7 @@ set ignorecase
 map <silent> I :TComment<CR>
 
 " Save
+" map <silent> W :w<ENTER> :call ScreenShellSend("load '".@%."';")<CR>
 map <silent> W :w<CR>
 
 " Redo
