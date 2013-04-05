@@ -53,7 +53,7 @@
   " Git commands
   Bundle 'tpope/vim-fugitive'
   " Search all files in current git repo
-  Bundle 'aghareza/vim-gitgrep'
+  " Bundle 'aghareza/vim-gitgrep'
   " Search and replace across all files
   Bundle 'skwp/greplace.vim'
   " Git history
