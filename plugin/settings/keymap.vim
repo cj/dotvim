@@ -73,4 +73,4 @@ nmap <silent> // :nohlsearch<CR>
 nmap <silent> ,vr :so %<CR>
 
 " Hide line numbers and git gutter
-nmap <silent> <C-m> :GitGutterToggle<CR>:set invnumber<CR>
+nmap <silent> <C-g> :GitGutterToggle<CR>:set invnumber<CR>
