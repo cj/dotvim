@@ -14,6 +14,7 @@ Switch to the `~/.vim` directory, and fetch submodules:
     git submodule update
     sudo rm -r `gem env gemdir`/doc
     rvm docs generate-ri
+    gem install html2haml
 
 # Install HomeBrew
 brew install npm
