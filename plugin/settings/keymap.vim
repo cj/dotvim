@@ -74,3 +74,6 @@ nmap <silent> ,vr :so %<CR>
 
 " Hide line numbers and git gutter
 nmap <silent> <C-g> :GitGutterToggle<CR>:set invnumber<CR>
+
+" Pull up file in NERDTree
+nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>
