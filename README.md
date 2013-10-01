@@ -15,6 +15,7 @@ Switch to the `~/.vim` directory, and fetch submodules:
     sudo rm -r `gem env gemdir`/doc
     rvm docs generate-ri
     gem install html2haml
+    gem install CoffeeTags
 
 # Install HomeBrew
 brew install npm

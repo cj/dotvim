@@ -1,1 +1,1 @@
-vmap <C-h> :!html2haml<cr>
+vmap <C-h> :!html2haml -e<cr>

@@ -94,6 +94,7 @@
   " vim-scripts
   Bundle 'lastpos.vim'
   Bundle 'YankRing.vim'
+  Bundle "AutoTag.vim"
 
 " ================ General Config ====================
 set number                      "Line numbers are good

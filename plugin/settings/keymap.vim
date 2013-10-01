@@ -77,3 +77,6 @@ nmap <silent> <C-g> :GitGutterToggle<CR>:set invnumber<CR>
 
 " Pull up file in NERDTree
 nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>
+
+" Tag/Re-tag an entire project
+nnoremap <silent> ,t :!ctags --exclude="vendor/gems" --extra=+f -R *<CR><CR>
